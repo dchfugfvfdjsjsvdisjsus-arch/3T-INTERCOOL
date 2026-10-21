@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+
+<html lang="th" style=""><head>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/></head><body class="bg-surface font-body-md text-on-surface antialiased"><svg aria-hidden="true" class="inline-defs-container" style="position:absolute;width:0;height:0;overflow:hidden"></svg><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-dim": "#d2d9f4", "primary-fixed": "#d1e4ff", "secondary-fixed-dim": "#93ccff", "on-surface-variant": "#43474d", "on-secondary-fixed-variant": "#004b73", "surface-container-low": "#f2f3ff", "primary": "#001428", "tertiary-fixed": "#ffdbce", "primary-fixed-dim": "#b0c9e8", "surface": "#faf8ff", "tertiary-fixed-dim": "#ffb599", "on-tertiary": "#ffffff", "inverse-surface": "#283044", "surface-container-highest": "#dae2fd", "inverse-on-surface": "#eef0ff", "tertiary-container": "#4b1600", "outline": "#74777e", "on-tertiary-fixed": "#370e00", "secondary-container": "#5bb8fe", "on-error-container": "#93000a", "on-tertiary-fixed-variant": "#7f2b00", "surface-bright": "#faf8ff", "secondary": "#006398", "surface-variant": "#dae2fd", "on-primary": "#ffffff", "surface-container": "#eaedff", "primary-container": "#0f2942", "on-secondary": "#ffffff", "on-primary-fixed-variant": "#314863", "on-error": "#ffffff", "on-secondary-container": "#00476e", "secondary-fixed": "#cce5ff", "error": "#ba1a1a", "on-secondary-fixed": "#001d31", "surface-tint": "#49607c", "surface-container-lowest": "#ffffff", "error-container": "#ffdad6", "on-primary-container": "#7991af", "inverse-primary": "#b0c9e8", "tertiary": "#290800", "surface-container-high": "#e2e7ff", "on-tertiary-container": "#f35e15", "on-primary-fixed": "#011d35", "on-surface": "#131b2e", "on-background": "#131b2e", "outline-variant": "#c3c6ce", "background": "#faf8ff" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-md": "1rem", "space-sm": "0.5rem", "space-xl": "2.5rem", "margin-mobile": "1.25rem", "margin": "3rem", "gutter-mobile": "1rem", "space-xs": "0.25rem", "space-lg": "1.5rem", "gutter": "1.5rem" }, "fontFamily": { "body-md": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Space Grotesk"], "label-eyebrow": ["JetBrains Mono"], "body-sm": ["Plus Jakarta Sans"], "display-xl-mobile": ["Space Grotesk"], "display-xl": ["Space Grotesk"], "headline-lg": ["Space Grotesk"], "headline-md": ["Space Grotesk"], "label-technical": ["JetBrains Mono"], "title-lg": ["Plus Jakarta Sans"] }, "fontSize": { "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "title-md": ["18px", { "lineHeight": "26px", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }], "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "700" }], "label-eyebrow": ["11px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }], "display-xl-mobile": ["36px", { "lineHeight": "44px", "fontWeight": "700" }], "display-xl": ["56px", { "lineHeight": "64px", "fontWeight": "700" }], "headline-lg": ["36px", { "lineHeight": "44px", "fontWeight": "700" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "label-technical": ["13px", { "lineHeight": "18px", "letterSpacing": "0.04em", "fontWeight": "500" }], "title-lg": ["20px", { "lineHeight": "28px", "fontWeight": "600" }] } } } };</script><header class="fixed top-0 left-0 w-full z-50 bg-surface/95 backdrop-blur-md shadow-[0_1px_8px_rgba(15,41,66,0.06)]"><div class="h-20 max-w-[1280px] mx-auto px-margin-mobile lg:px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><img alt="3T Intercool &amp; Service" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRy1OzkIMpI71VvSLTpewUWpU4v0vX8iI7Op8o6m4iTV6pcbsO_oa9gcsOgU8hJ_WIxWFb7gXmC_ki_xqwn6AgGK7vx3jxtAX9JSD5T_AYaGa_wFCtjJvaXDApwqQJQk_IHcfCw95VhqRlpMnvelQU5r9eZQgg5jJdtGEl9XM5pHIFH_zZCgmmFR8GTc1M0VJ4ZKgvKBum0yaGNW0XMhFgy5wZ6K_Sro1dOBrRzZgWG7bgSAiVJXwaHo_bOl5uoqGUIQ"/><div class="flex flex-col"><span class="font-headline-md text-base leading-tight font-bold tracking-tight text-primary uppercase">3T INTERCOOL</span><span class="font-label-eyebrow text-[10px] text-secondary tracking-widest uppercase">Engineering &amp; Service</span></div></div><nav class="hidden xl:flex items-center gap-space-md" data-active-classes="text-primary font-bold bg-surface-container rounded px-3 py-1.5"><a class="font-body-md text-on-surface-variant hover:text-on-surface transition-colors px-2 py-1" data-path="home" href="#">หน้าแรก</a><a class="font-body-md text-on-surface-variant hover:text-on-surface transition-colors px-2 py-1" data-path="about-us" href="#">เกี่ยวกับเรา</a><a class="font-body-md text-on-surface-variant hover:text-on-surface transition-colors px-2 py-1" data-path="services" href="#">บริการของเรา</a><a class="font-body-md text-on-surface-variant hover:text-on-surface transition-colors px-2 py-1" data-path="track-record" href="#">ผลงานโครงการ</a><a class="font-body-md text-on-surface-variant hover:text-on-surface transition-colors px-2 py-1" data-path="why-choose-us" href="#">จุดเด่น</a><a class="font-body-md text-on-surface-variant hover:text-on-surface transition-colors px-2 py-1" data-path="contact" href="#">ติดต่อเรา</a></nav><div class="flex items-center gap-space-md"><div class="hidden md:flex flex-col text-right"><span class="font-label-eyebrow text-on-surface-variant text-[10px] tracking-wider">HOTLINE 24/7</span><a class="font-label-technical text-secondary hover:underline font-bold" href="tel:0815163898">081-5163898</a></div><a class="hidden sm:inline-flex items-center gap-2 bg-primary-container hover:bg-primary text-on-primary px-4 py-2.5 rounded font-title-md text-sm transition-colors duration-150" data-path="contact" href="#"><span class="material-symbols-outlined text-base text-secondary-container">request_quote</span><span class="">ขอใบเสนอราคา</span></a><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant" src="https://lh3.googleusercontent.com/aida/AEtjO1XnNPebhx74pgbpujmwajHB_dzqV62KLhdZM8jiZltkB7lDbbp1wNPXWnHHrzxxk-TtC78ZWYuyL99g4ZWE7SJ1fPHvVGljXkLLVb7ft1Rw4Seqw-5jFqvbWNolnLk11rBm3kKoG15CDH7KheeDI7Ue8CRwXctOz67Fj9nlnhjXy5-ANjblI1YTEoM9MNOzOgt4tb_e3Ijzme6QI7O0cLuyyXAGcUvV0xExqdNW5TMXd_x9JAr3qjKmoZZmdm7juzrV5af8gdwk_g"/></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full">
+<!-- Top Anchor -->
+<div class="scroll-mt-24" id="home"></div>
+<!-- Hero Section -->
+<section class="relative w-full bg-primary-container text-on-primary overflow-hidden py-16 lg:py-24">
+<!-- Subtle Industrial Background Grid & Vector Lines -->
+<div class="absolute inset-0 pointer-events-none opacity-10 bg-[radial-gradient(#5bb8fe_1px,transparent_1px)] [background-size:24px_24px]"></div>
+<div class="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-secondary-container/10 blur-3xl pointer-events-none"></div>
+<div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg lg:gap-space-xl items-center">
+<!-- Text & Action Content -->
+<div class="lg:col-span-7 space-y-6">
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface/10 backdrop-blur-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-on-tertiary-container animate-ping"></span>
+<span class="font-label-eyebrow text-secondary-fixed tracking-wider uppercase text-xs">
+              Industrial HVAC &amp; Cold Storage Engineering
+            </span>
+</div>
+<h1 class="font-headline-lg lg:font-display-xl text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight tracking-tight text-white">
+            ผู้นำด้านวิศวกรรม<br class="hidden sm:inline"/>ระบบความเย็น <span class="text-secondary-fixed-dim">และระบายอากาศ</span> ครบวงจร
+          </h1>
+<p class="font-body-lg text-surface-container-high leading-relaxed max-w-2xl">
+            รับออกแบบ • เขียนแบบ • ติดตั้ง • ซ่อมบำรุงรักษา ระบบปรับอากาศ อาคารสำนักงาน ห้องเย็น Cold Room ตู้แช่พาณิชย์ และระบบท่อลมควบคุมอุณหภูมิ ด้วยทีมวิศวกรผู้เชี่ยวชาญ ได้มาตรฐานวิศวกรรมระดับสากล
+          </p>
+<!-- CTAs -->
+<div class="flex flex-wrap items-center gap-4 pt-2">
+<a class="inline-flex items-center gap-2 bg-on-tertiary-container hover:bg-tertiary text-white font-title-md px-6 py-3.5 rounded shadow-lg transition-all duration-200" href="#contact">
+<span class="material-symbols-outlined text-xl">request_quote</span>
+<span>ขอใบเสนอราคา / ปรึกษาฟรี</span>
+</a>
+<a class="inline-flex items-center gap-2 bg-surface/15 hover:bg-surface/25 text-white font-title-md px-6 py-3.5 rounded backdrop-blur-sm transition-all duration-200" href="#track-record">
+<span class="material-symbols-outlined text-xl text-secondary-container">domain_verification</span>
+<span>ชมผลงานโครงการ</span>
+</a>
+</div>
+<!-- Trust KPI Metrics -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-8">
+<div class="bg-surface/5 p-4 rounded backdrop-blur-sm">
+<div class="font-display-xl-mobile text-2xl lg:text-3xl font-bold text-white">15+</div>
+<div class="font-body-sm text-surface-container-high text-xs">ปี ประสบการณ์วิศวกรรม</div>
+</div>
+<div class="bg-surface/5 p-4 rounded backdrop-blur-sm">
+<div class="font-display-xl-mobile text-2xl lg:text-3xl font-bold text-white">100%</div>
+<div class="font-body-sm text-surface-container-high text-xs">ส่งมอบตรงตามสเปก</div>
+</div>
+<div class="bg-surface/5 p-4 rounded backdrop-blur-sm">
+<div class="font-display-xl-mobile text-2xl lg:text-3xl font-bold text-secondary-fixed">24/7</div>
+<div class="font-body-sm text-surface-container-high text-xs">ทีมซัพพอร์ตฉุกเฉิน</div>
+</div>
+<div class="bg-surface/5 p-4 rounded backdrop-blur-sm">
+<div class="font-display-xl-mobile text-2xl lg:text-3xl font-bold text-on-tertiary-container">ZERO</div>
+<div class="font-body-sm text-surface-container-high text-xs">Accident Standard</div>
+</div>
+</div>
+</div>
+<!-- Featured Project Showcase Card -->
+<div class="lg:col-span-5 relative">
+<div class="bg-surface rounded-xl p-4 shadow-2xl relative z-10">
+<div class="relative overflow-hidden rounded">
+<img alt="Cooling Tower &amp; Compressor Works" class="w-full h-72 sm:h-80 object-cover hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpkkqrfBoU7O1WnHjuj1ppeKaH3L5jFnCK9AEuAroCZsZBqwQt9AYrdh2gQCNRtAAT9RMQ5n2dC8lJJ6YeKtJK1rZ7L5bwPf-bLRj_7kGtv8R5SYQfn1g1xq8340S08bD5Y-_H7l9MRZU81Djlm0EW_dFQwqW-hcwzYy-kkXK_7mXXD5M_tio6aocYlSLMGIIpmN6XPUwUDtf28LZYImw2njUdRH2PBS5AvWihnIxK-aX7KU0gi46uMiOuDJpoLF4RHQ"/>
+<div class="absolute top-3 left-3 bg-primary/80 backdrop-blur-md px-3 py-1 rounded text-white font-label-eyebrow text-xs flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+                HIGH-PRESSURE CHILLER SYSTEM
+              </div>
+<div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-primary via-primary/80 to-transparent p-4 text-white">
+<div class="font-title-md text-sm text-secondary-fixed uppercase tracking-wider">PROJECT HIGHLIGHT</div>
+<div class="font-body-md text-white font-semibold">งานเปลี่ยน Compressor และติดตั้งชุด Cooling Tower ระบบควบคุมแรงดันสูง</div>
+</div>
+</div>
+<div class="mt-4 flex items-center justify-between text-on-surface">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">verified</span>
+<span class="font-label-technical text-xs text-on-surface-variant">ISO 9001:2015 Spec Ready</span>
+</div>
+<a class="font-label-technical text-xs font-semibold text-secondary hover:underline flex items-center gap-1" href="#track-record">
+                ดูผลงานทั้งหมด
+                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Client Trust Bar -->
+<section class="w-full bg-surface-container py-8 shadow-inner">
+<div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin text-center">
+<div class="font-label-eyebrow text-secondary uppercase tracking-widest text-xs mb-6">
+        ได้รับความไว้วางใจจากเครือโรงงานอุตสาหกรรมและห้างค้าปลีกชั้นนำทั่วประเทศ
+      </div>
+<div class="flex flex-wrap items-center justify-center gap-4 sm:gap-8 lg:gap-12 opacity-85">
+<div class="bg-surface px-5 py-2.5 rounded shadow-sm font-headline-md text-sm tracking-wider font-bold text-primary">CP GROUP</div>
+<div class="bg-surface px-5 py-2.5 rounded shadow-sm font-headline-md text-sm tracking-wider font-bold text-primary">ISUZU MOTORS</div>
+<div class="bg-surface px-5 py-2.5 rounded shadow-sm font-headline-md text-sm tracking-wider font-bold text-primary">KCE ELECTRONICS</div>
+<div class="bg-surface px-5 py-2.5 rounded shadow-sm font-headline-md text-sm tracking-wider font-bold text-primary">DON DON DONKI</div>
+<div class="bg-surface px-5 py-2.5 rounded shadow-sm font-headline-md text-sm tracking-wider font-bold text-primary">THE MALL GROUP</div>
+<div class="bg-surface px-5 py-2.5 rounded shadow-sm font-headline-md text-sm tracking-wider font-bold text-primary">TOSHIBA CARRIER</div>
+<div class="bg-surface px-5 py-2.5 rounded shadow-sm font-headline-md text-sm tracking-wider font-bold text-primary">SANDEN INTERCOOL</div>
+</div>
+</div>
+</section>
+<!-- About Us Section -->
+<section class="w-full py-20 bg-surface scroll-mt-20" id="about">
+<div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin">
+<!-- Section Header -->
+<div class="flex flex-col mb-12">
+<div class="flex items-center gap-3">
+<div class="w-1.5 h-6 bg-on-tertiary-container rounded-sm"></div>
+<span class="font-label-eyebrow text-secondary uppercase tracking-widest text-xs font-bold">ABOUT OUR COMPANY</span>
+</div>
+<h2 class="font-headline-lg text-2xl lg:text-3xl text-primary font-bold mt-2">
+          เกี่ยวกับบริษัท 3ต อินเตอร์คูล แอนด์ เซอร์วิส จำกัด
+        </h2>
+<p class="font-body-lg text-on-surface-variant max-w-3xl mt-2">
+          ผู้เชี่ยวชาญด้านงานวิศวกรรมระบบความเย็นและระบายอากาศ (HVAC &amp; Refrigeration Engineering Solutions)
+        </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg lg:gap-space-xl items-start">
+<!-- Story & Pillars -->
+<div class="lg:col-span-7 space-y-6">
+<div class="bg-surface-container-low p-6 lg:p-8 rounded-xl shadow-sm space-y-4">
+<h3 class="font-title-lg text-primary font-bold">
+              ความมุ่งมั่นในมาตรฐานวิศวกรรมระบบความเย็นระดับสากล
+            </h3>
+<p class="font-body-md text-on-surface-variant leading-relaxed">
+<strong>บริษัท 3ต อินเตอร์คูล แอนด์ เซอร์วิส จำกัด (3T INTERCOOL &amp; SERVICE CO., LTD.)</strong> ดำเนินธุรกิจเป็นผู้เชี่ยวชาญด้านงานวิศวกรรมระบบความเย็นและระบบหมุนเวียนอากาศ ครอบคลุมตั้งแต่การออกแบบ คำนวณภาระความเย็น เขียนแบบ ติดตั้ง ตลอดจนการบำรุงรักษาเชิงป้องกัน (Preventive Maintenance)
+            </p>
+<p class="font-body-md text-on-surface-variant leading-relaxed">
+              เราให้บริการกลุ่มโรงงานอุตสาหกรรมแปรรูปอาหาร โรงงานประกอบยานยนต์ คลังสินค้าห้องเย็น และห้างสรรพสินค้าชั้นนำระดับประเทศ ด้วยทีมช่างเทคนิคที่ผ่านการรับรองความปลอดภัยและมาตรฐานงานช่างสากล
+            </p>
+</div>
+<!-- 4 Pillars -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="p-5 bg-surface-container rounded-lg shadow-sm">
+<div class="w-10 h-10 rounded bg-secondary/10 text-secondary flex items-center justify-center mb-3">
+<span class="material-symbols-outlined">hub</span>
+</div>
+<h4 class="font-title-md text-primary text-base mb-1">One-Stop Solution</h4>
+<p class="font-body-sm text-on-surface-variant">ครบวงจรตั้งแต่ให้คำปรึกษา คำนวณ BTU ออกแบบระบบ ติดตั้ง จนถึงงานซ่อมบำรุง</p>
+</div>
+<div class="p-5 bg-surface-container rounded-lg shadow-sm">
+<div class="w-10 h-10 rounded bg-secondary/10 text-secondary flex items-center justify-center mb-3">
+<span class="material-symbols-outlined">engineering</span>
+</div>
+<h4 class="font-title-md text-primary text-base mb-1">Professional Expertise</h4>
+<p class="font-body-sm text-on-surface-variant">ทีมวิศวกรและช่างชำนาญการกว่า 15 ปี แก้ปัญหาตรงจุด ปฏิบัติตามมาตรฐานช่างกลโรงงาน</p>
+</div>
+<div class="p-5 bg-surface-container rounded-lg shadow-sm">
+<div class="w-10 h-10 rounded bg-secondary/10 text-secondary flex items-center justify-center mb-3">
+<span class="material-symbols-outlined">verified_user</span>
+</div>
+<h4 class="font-title-md text-primary text-base mb-1">Safety &amp; Compliance</h4>
+<p class="font-body-sm text-on-surface-variant">มาตรการความปลอดภัยเข้มงวด 100% พร้อมใบอนุญาต Hot Work และอุปกรณ์ PPE เต็มรูปแบบ</p>
+</div>
+<div class="p-5 bg-surface-container rounded-lg shadow-sm">
+<div class="w-10 h-10 rounded bg-secondary/10 text-secondary flex items-center justify-center mb-3">
+<span class="material-symbols-outlined">alarm_on</span>
+</div>
+<h4 class="font-title-md text-primary text-base mb-1">Fast Site Response</h4>
+<p class="font-body-sm text-on-surface-variant">ทีมฉุกเฉินพร้อมเข้าแก้ไขปัญหาหน้างานตลอด 24 ชั่วโมง ลดความเสี่ยงสินค้าเสียหาย</p>
+</div>
+</div>
+</div>
+<!-- Leadership Spotlight & Timeline -->
+<div class="lg:col-span-5 space-y-6">
+<!-- Managing Director Card -->
+<div class="bg-primary text-on-primary p-6 lg:p-8 rounded-xl shadow-md relative overflow-hidden">
+<div class="absolute -right-8 -bottom-8 opacity-10">
+<span class="material-symbols-outlined text-[160px]">badge</span>
+</div>
+<div class="relative z-10 space-y-4">
+<span class="font-label-eyebrow text-secondary-fixed text-xs tracking-wider uppercase">Executive Leadership</span>
+<div class="space-y-1">
+<h4 class="font-headline-md text-xl font-bold text-white">นาย ธวัชชัย บาระพรม</h4>
+<p class="font-label-technical text-sm text-secondary-fixed-dim">MR. TAWATCHAI BARAPHOM</p>
+<p class="font-label-eyebrow text-on-tertiary-container font-bold text-xs uppercase tracking-wider">MANAGING DIRECTOR</p>
+</div>
+<p class="font-body-sm text-surface-container-high leading-relaxed pt-2">
+                "เรายึดมั่นในความซื่อสัตย์ มาตรฐานความปลอดภัย และการส่งมอบงานระบบปรับอากาศและทำความเย็นที่สมบูรณ์แบบที่สุด เพื่อให้ธุรกิจของคู่ค้าดำเนินไปได้อย่างต่อเนื่องโดยไม่มีสะดุด"
+              </p>
+<div class="pt-4 flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-secondary-container/20 flex items-center justify-center text-secondary-fixed">
+<span class="material-symbols-outlined text-lg">call</span>
+</div>
+<a class="font-label-technical text-white font-bold hover:underline" href="tel:0815163898">081-5163898</a>
+</div>
+</div>
+</div>
+<!-- Milestones Timeline -->
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm space-y-4">
+<h4 class="font-title-md text-primary font-bold text-sm tracking-wider uppercase">เส้นทางการเติบโต (MILESTONES)</h4>
+<div class="space-y-4 relative pl-6 before:content-[''] before:absolute before:left-2 before:top-2 before:bottom-2 before:w-0.5 before:bg-outline-variant/40">
+<div class="relative">
+<div class="absolute -left-6 top-1 w-2.5 h-2.5 rounded-full bg-secondary"></div>
+<div class="font-label-technical text-xs font-bold text-secondary">2009 - ก่อตั้งทีมงานช่างเทคนิค</div>
+<p class="font-body-sm text-on-surface-variant text-xs">เริ่มต้นงานซ่อมบำรุงและติดตั้งระบบตู้แช่พาณิชย์และแอร์สำนักงาน</p>
+</div>
+<div class="relative">
+<div class="absolute -left-6 top-1 w-2.5 h-2.5 rounded-full bg-secondary"></div>
+<div class="font-label-technical text-xs font-bold text-secondary">2014 - ขยายงานห้องเย็นอุตสาหกรรม</div>
+<p class="font-body-sm text-on-surface-variant text-xs">พัฒนางานออกแบบติดตั้ง Cold Room, Freezer และงานแผงฉนวน PIR มาตรฐานสูง</p>
+</div>
+<div class="relative">
+<div class="absolute -left-6 top-1 w-2.5 h-2.5 rounded-full bg-secondary"></div>
+<div class="font-label-technical text-xs font-bold text-secondary">2019 - สู่พันธมิตรเครือข่าย Enterprise</div>
+<p class="font-body-sm text-on-surface-variant text-xs">ได้รับความไว้วางใจจาก CP, ISUZU, KCE, DONKI ในโครงการโรงงานและห้างค้าปลีก</p>
+</div>
+<div class="relative">
+<div class="absolute -left-6 top-1 w-2.5 h-2.5 rounded-full bg-on-tertiary-container"></div>
+<div class="font-label-technical text-xs font-bold text-on-tertiary-container">ปัจจุบัน - Total HVAC &amp; Cold Solutions</div>
+<p class="font-body-sm text-on-surface-variant text-xs">บริการครบวงจร พร้อมทีมช่างซ่อมบำรุงฉุกเฉิน 24 ชั่วโมง ทั่วประเทศ</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Core Services Section -->
+<section class="w-full py-20 bg-surface-container-low scroll-mt-20" id="services">
+<div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin">
+<!-- Section Header -->
+<div class="flex flex-col items-center text-center mb-16">
+<div class="inline-flex items-center gap-2">
+<div class="w-1.5 h-5 bg-on-tertiary-container rounded-sm"></div>
+<span class="font-label-eyebrow text-secondary uppercase tracking-widest text-xs font-bold">OUR SPECIALIZED CAPABILITIES</span>
+</div>
+<h2 class="font-headline-lg text-2xl lg:text-3xl text-primary font-bold mt-2">
+          ขอบเขตบริการหลักด้านวิศวกรรมความเย็นและระบายอากาศ
+        </h2>
+<p class="font-body-lg text-on-surface-variant max-w-2xl mt-2">
+          บริการออกแบบ ติดตั้ง ตรวจสอบ และซ่อมบำรุงด้วยวิศวกรผู้มีประสบการณ์ตามมาตรฐานวิศวกรรมควบคุม
+        </p>
+</div>
+<!-- 4 Core Service Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Card 1 -->
+<div class="bg-surface rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between group">
+<div class="space-y-4">
+<div class="w-12 h-12 rounded-lg bg-surface-container text-secondary flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-2xl">ac_unit</span>
+</div>
+<div class="font-label-eyebrow text-secondary text-xs font-bold">SERVICE 01</div>
+<h3 class="font-title-md text-primary font-bold">งานระบบปรับอากาศ &amp; ตู้แช่</h3>
+<p class="font-body-sm text-on-surface-variant leading-relaxed">
+              ติดตั้ง ซ่อมแซม บำรุงรักษา แอร์โรงงาน VRV/VRF, Chilled Water System, Split Type และตู้แช่พาณิชย์ทุกแบรนด์ ทั้งแบบตู้เปิด ตู้กระจก สำหรับซูเปอร์มาร์เก็ต
+            </p>
+<ul class="space-y-1.5 pt-2">
+<li class="flex items-center gap-2 font-body-sm text-xs text-on-surface">
+<span class="material-symbols-outlined text-sm text-secondary">check_circle</span>
+<span>ระบบ VRV / VRF อัจฉริยะ</span>
+</li>
+<li class="flex items-center gap-2 font-body-sm text-xs text-on-surface">
+<span class="material-symbols-outlined text-sm text-secondary">check_circle</span>
+<span>ตู้แช่เคาน์เตอร์ และตู้แช่เย็นห้างสรรพสินค้า</span>
+</li>
+<li class="flex items-center gap-2 font-body-sm text-xs text-on-surface">
+<span class="material-symbols-outlined text-sm text-secondary">check_circle</span>
+<span>ตรวจเช็ครอยรั่วน้ำยา และประสิทธิภาพคอมเพรสเซอร์</span>
+</li>
+</ul>
+</div>
+<div class="pt-6">
+<a class="inline-flex items-center gap-1 font-label-technical text-xs font-bold text-secondary hover:text-primary transition-colors" href="#contact">
+<span>ขอคำปรึกษางานนี้</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between group">
+<div class="space-y-4">
+<div class="w-12 h-12 rounded-lg bg-surface-container text-secondary flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-2xl">severe_cold</span>
+</div>
+<div class="font-label-eyebrow text-secondary text-xs font-bold">SERVICE 02</div>
+<h3 class="font-title-md text-primary font-bold">งานระบบห้องเย็น (Cold Room)</h3>
+<p class="font-body-sm text-on-surface-variant leading-relaxed">
+              ออกแบบและสร้างห้องเย็นอุตสาหกรรม (Chilled Room &amp; Freezer Room) คลีนรูม แผงฉนวน Sandwich Panel PIR/PU ควบคุมอุณหภูมิได้อย่างแม่นยำ ปลอดภัยตามเกณฑ์ GMP/HACCP
+            </p>
+<ul class="space-y-1.5 pt-2">
+<li class="flex items-center gap-2 font-body-sm text-xs text-on-surface">
+<span class="material-symbols-outlined text-sm text-secondary">check_circle</span>
+<span>แผงฉนวนกันไฟ PIR เกรด Food Contact</span>
+</li>
+<li class="flex items-center gap-2 font-body-sm text-xs text-on-surface">
+<span class="material-symbols-outlined text-sm text-secondary">check_circle</span>
+<span>ชุด Condensing Unit &amp; คอยล์เย็นคุณภาพสูง</span>
+</li>
+<li class="flex items-center gap-2 font-body-sm text-xs text-on-surface">
+<span class="material-symbols-outlined text-sm text-secondary">check_circle</span>
+<span>ระบบควบคุมอุณหภูมิดิจิทัลและ Alarm เตือนภัย</span>
+</li>
+</ul>
+</div>
+<div class="pt-6">
+<a class="inline-flex items-center gap-1 font-label-technical text-xs font-bold text-secondary hover:text-primary transition-colors" href="#contact">
+<span>ขอคำปรึกษางานนี้</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between group">
+<div class="space-y-4">
+<div class="w-12 h-12 rounded-lg bg-surface-container text-secondary flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-2xl">air</span>
+</div>
+<div class="font-label-eyebrow text-secondary text-xs font-bold">SERVICE 03</div>
+<h3 class="font-title-md text-primary font-bold">งานท่อลม &amp; ระบายอากาศ (Duct)</h3>
+<p class="font-body-sm text-on-surface-variant leading-relaxed">
+              ผลิตและติดตั้งท่อส่งลมแอร์ (Air Ductwork), ท่อระบายอากาศ Exhaust Air, ท่อดักท์สังกะสี ท่อสแตนเลส หัวจ่ายลม พร้อมฉนวนใยแก้วและแจ็คเก็ตกันความร้อน
+            </p>
+<ul class="space-y-1.5 pt-2">
+<li class="flex items-center gap-2 font-body-sm text-xs text-on-surface">
+<span class="material-symbols-outlined text-sm text-secondary">check_circle</span>
+<span>Air Duct สำหรับ Cleanroom และไลน์ผลิต</span>
+</li>
+<li class="flex items-center gap-2 font-body-sm text-xs text-on-surface">
+<span class="material-symbols-outlined text-sm text-secondary">check_circle</span>
+<span>งานหุ้มฉนวน Jacket Aluminum / Stainless</span>
+</li>
+<li class="flex items-center gap-2 font-body-sm text-xs text-on-surface">
+<span class="material-symbols-outlined text-sm text-secondary">check_circle</span>
+<span>ปรับสมดุลลม Air Balancing ตามมาตรฐาน</span>
+</li>
+</ul>
+</div>
+<div class="pt-6">
+<a class="inline-flex items-center gap-1 font-label-technical text-xs font-bold text-secondary hover:text-primary transition-colors" href="#contact">
+<span>ขอคำปรึกษางานนี้</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between group">
+<div class="space-y-4">
+<div class="w-12 h-12 rounded-lg bg-surface-container text-secondary flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-2xl">water_damage</span>
+</div>
+<div class="font-label-eyebrow text-secondary text-xs font-bold">SERVICE 04</div>
+<h3 class="font-title-md text-primary font-bold">ระบบ Chiller &amp; ท่อน้ำเย็น</h3>
+<p class="font-body-sm text-on-surface-variant leading-relaxed">
+              งานติดตั้ง ซ่อมบำรุงระบบ Chiller Water, Cooling Tower, งานเปลี่ยน Butterfly Valve, เช็ควาล์ว, ปั๊มน้ำหล่อเย็น และล้างทำความสะอาดแผงคอนเดนเซอร์
+            </p>
+<ul class="space-y-1.5 pt-2">
+<li class="flex items-center gap-2 font-body-sm text-xs text-on-surface">
+<span class="material-symbols-outlined text-sm text-secondary">check_circle</span>
+<span>งานเปลี่ยนวาล์ว Butterfly Valve ท่อน้ำแรงดันสูง</span>
+</li>
+<li class="flex items-center gap-2 font-body-sm text-xs text-on-surface">
+<span class="material-symbols-outlined text-sm text-secondary">check_circle</span>
+<span>ซ่อมบำรุง Cooling Tower และระบบ Water Piping</span>
+</li>
+<li class="flex items-center gap-2 font-body-sm text-xs text-on-surface">
+<span class="material-symbols-outlined text-sm text-secondary">check_circle</span>
+<span>สัญญาบริการซ่อมบำรุงรายปี (PM Contract)</span>
+</li>
+</ul>
+</div>
+<div class="pt-6">
+<a class="inline-flex items-center gap-1 font-label-technical text-xs font-bold text-secondary hover:text-primary transition-colors" href="#contact">
+<span>ขอคำปรึกษางานนี้</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Track Record & Project Gallery Section -->
+<section class="w-full py-20 bg-surface scroll-mt-20" id="track-record">
+<div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+<div>
+<div class="flex items-center gap-2">
+<div class="w-1.5 h-5 bg-on-tertiary-container rounded-sm"></div>
+<span class="font-label-eyebrow text-secondary uppercase tracking-widest text-xs font-bold">ENGINEERING TRACK RECORD</span>
+</div>
+<h2 class="font-headline-lg text-2xl lg:text-3xl text-primary font-bold mt-2">
+            ผลงานโครงการและความไว้วางใจ
+          </h2>
+<p class="font-body-md text-on-surface-variant mt-1">
+            ภาพถ่ายผลงานการติดตั้งจริง ณ ไซต์งานลูกค้าองค์กรและโรงงานอุตสาหกรรม
+          </p>
+</div>
+<!-- Filter Tabs (Handled via vanilla JS below) -->
+<div class="flex flex-wrap gap-2" id="gallery-filter-buttons">
+<button class="filter-btn active-filter px-3.5 py-1.5 rounded font-label-technical text-xs font-semibold bg-primary text-white transition-colors" data-filter="all">
+            ทั้งหมด
+          </button>
+<button class="filter-btn px-3.5 py-1.5 rounded font-label-technical text-xs font-semibold bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors" data-filter="coldroom">
+            ห้องเย็น &amp; ตู้แช่
+          </button>
+<button class="filter-btn px-3.5 py-1.5 rounded font-label-technical text-xs font-semibold bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors" data-filter="duct">
+            ระบบท่อลม &amp; AHU
+          </button>
+<button class="filter-btn px-3.5 py-1.5 rounded font-label-technical text-xs font-semibold bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors" data-filter="chiller">
+            ระบบ Chiller &amp; ท่อ
+          </button>
+<button class="filter-btn px-3.5 py-1.5 rounded font-label-technical text-xs font-semibold bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors" data-filter="jacket">
+            หุ้มฉนวน &amp; Jacket
+          </button>
+</div>
+</div>
+<!-- Gallery Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="project-gallery">
+<!-- Item 1: Butterfly Valve KCE -->
+<div class="gallery-item bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all group" data-category="chiller">
+<div class="relative overflow-hidden h-60">
+<img alt="KCE ลาดกระบัง งานเปลี่ยน BUTTERFLY VALVE" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpkkqrfBoU7O1WnHjuj1ppeKaH3L5jFnCK9AEuAroCZsZBqwQt9AYrdh2gQCNRtAAT9RMQ5n2dC8lJJ6YeKtJK1rZ7L5bwPf-bLRj_7kGtv8R5SYQfn1g1xq8340S08bD5Y-_H7l9MRZU81Djlm0EW_dFQwqW-hcwzYy-kkXK_7mXXD5M_tio6aocYlSLMGIIpmN6XPUwUDtf28LZYImw2njUdRH2PBS5AvWihnIxK-aX7KU0gi46uMiOuDJpoLF4RHQ"/>
+<span class="absolute top-3 left-3 bg-primary/80 backdrop-blur-sm text-white px-2.5 py-1 rounded text-xs font-label-eyebrow">
+              KCE ELECTRONICS
+            </span>
+<span class="absolute top-3 right-3 bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded text-xs font-label-eyebrow font-bold">
+              ส่งมอบ 100%
+            </span>
+</div>
+<div class="p-5 space-y-2">
+<div class="font-label-eyebrow text-xs text-secondary font-bold">LOCATION: ลาดกระบัง, กทม.</div>
+<h3 class="font-title-md text-base text-primary font-bold">KCE ลาดกระบัง - งานเปลี่ยน BUTTERFLY VALVE &amp; ท่อน้ำเย็น</h3>
+<p class="font-body-sm text-on-surface-variant text-xs">
+              งานถอดเปลี่ยน Butterfly Valve ท่อเหล็กส่งน้ำหล่อเย็นขนาดใหญ่ พร้อมประกอบหน้าแปลนและทดสอบแรงดันระบบ
+            </p>
+</div>
+</div>
+<!-- Item 2: CP ลาดหลุมแก้ว -->
+<div class="gallery-item bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all group" data-category="coldroom">
+<div class="relative overflow-hidden h-60">
+<img alt="CP ลาดหลุมแก้ว งานย้ายตู้ทำความเย็นและห้องสแตนเลส" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrNHuUIvL4xGzLOIHomuCP30x_qTRAoDF74tS_PtLW8Cucdkk7IVm14N2uWfjGyn2kTfPYuopDDxJ6xlQV5uVM1GVlWw29FwxJR-9cgLAP0Ncnm6kCvYfNVAXNTqRs4yFomRIUKIs3ZBI43_Gbz4LouoqqsUpHH6iOFUBiSyGCHchHwqytSFHk8shyjJQfwYt2uvRByPZS35k1v_kouQDRMydCBqVHtDRm1GmrveNmdQDtX_USK_QEt3Mgmnx7S_4L8Q"/>
+<span class="absolute top-3 left-3 bg-primary/80 backdrop-blur-sm text-white px-2.5 py-1 rounded text-xs font-label-eyebrow">
+              CP GROUP
+            </span>
+<span class="absolute top-3 right-3 bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded text-xs font-label-eyebrow font-bold">
+              ส่งมอบ 100%
+            </span>
+</div>
+<div class="p-5 space-y-2">
+<div class="font-label-eyebrow text-xs text-secondary font-bold">LOCATION: ลาดหลุมแก้ว, ปทุมธานี</div>
+<h3 class="font-title-md text-base text-primary font-bold">CP ลาดหลุมแก้ว - งานย้ายตู้ทำความเย็นอุตสาหกรรม</h3>
+<p class="font-body-sm text-on-surface-variant text-xs">
+              ขนย้าย ประกอบติดตั้งระบบตู้ทำความเย็นสแตนเลสในคลีนรูมผลิตอาหาร ภายใต้มาตรฐานสุขอนามัยความปลอดภัยสูงสุด
+            </p>
+</div>
+</div>
+<!-- Item 3: The Mall Bangkapi Sanden -->
+<div class="gallery-item bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all group" data-category="coldroom">
+<div class="relative overflow-hidden h-60">
+<img alt="เดอะมอลล์บางกะปิ ติดตั้งตู้แช่เย็น ซันเด้น" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6CWmdNQOmjIIOOEk9gbS-GMMvXdY-qZVThFME8RiKqnbfc0iH8rSZvweO7Y36RbmSx6Lm4Cta_VIctzXvyJxCy-fQP1_SlFV6ZN2V7VOGpJHN04K3o5xfeXXAimK6uRSdLs6vgeC9f9RmL38_8KbNVNVd8bWzWll8Lsy1j58kTunwuHwYAtrog3FzxcMnzQr35MhWtll_5Ld7iAgKquDij0WF0Lm3wuWy6w-NKN4hTW1O5JUdiXAUpvZa7AjkS2oYWA"/>
+<span class="absolute top-3 left-3 bg-primary/80 backdrop-blur-sm text-white px-2.5 py-1 rounded text-xs font-label-eyebrow">
+              THE MALL / SANDEN
+            </span>
+<span class="absolute top-3 right-3 bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded text-xs font-label-eyebrow font-bold">
+              ส่งมอบ 100%
+            </span>
+</div>
+<div class="p-5 space-y-2">
+<div class="font-label-eyebrow text-xs text-secondary font-bold">LOCATION: เดอะมอลล์ บางกะปิ</div>
+<h3 class="font-title-md text-base text-primary font-bold">ห้างเดอะมอลล์บางกะปิ - งานติดตั้งตู้แช่เย็น Sanden</h3>
+<p class="font-body-sm text-on-surface-variant text-xs">
+              งานยกย้าย เดินระบบท่อน้ำยา ท่อน้ำทิ้ง และติดตั้งตู้แช่สำหรับห้างสรรพสินค้าด้วยแท่นโครงเหล็กโครงสร้างเฉพาะ
+            </p>
+</div>
+</div>
+<!-- Item 4: Don Don Donki Bangkapi -->
+<div class="gallery-item bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all group" data-category="coldroom">
+<div class="relative overflow-hidden h-60">
+<img alt="ร้านดองดองดองกิ สาขาห้างเดอะมอลล์บางกะปิ" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3XxHwTw2oUnkr6sLXbQvvOMBKYS7iatBgrNt3pUtoa9jxjd2jIg9rIsa3KT-o2WwQxCKVV4RcK4GhotytlmarzjTrIojVjQkD3vWIYctfRolyrPKYLb5Y9clyECFdqQIl7kSNqkaUj0cIkoLgh5YLY4r97Ritq_SlgHQa9l8Z4NfEFrNTgLEo43xb4LUA-kae0ynAWd6nYSnAs3-LNZ2Mw_iqUgD3pJ5Uk9GQDnCkRmOy9IQrZ_lqL8aA_puwKzHqZw"/>
+<span class="absolute top-3 left-3 bg-primary/80 backdrop-blur-sm text-white px-2.5 py-1 rounded text-xs font-label-eyebrow">
+              DON DON DONKI
+            </span>
+<span class="absolute top-3 right-3 bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded text-xs font-label-eyebrow font-bold">
+              ส่งมอบ 100%
+            </span>
+</div>
+<div class="p-5 space-y-2">
+<div class="font-label-eyebrow text-xs text-secondary font-bold">LOCATION: DONKI เดอะมอลล์บางกะปิ</div>
+<h3 class="font-title-md text-base text-primary font-bold">ร้านดองดองดองกิ - งานติดตั้งตู้แช่เย็นและโซนขายอาหาร</h3>
+<p class="font-body-sm text-on-surface-variant text-xs">
+              ติดตั้งตู้แช่โชว์สินค้าอาหารสด อาหารแช่แข็ง ระบบระบายความร้อน และงานเชื่อมต่อระบบควบคุมความเย็นอัตโนมัติ
+            </p>
+</div>
+</div>
+<!-- Item 5: Fashion Island Condensing Unit -->
+<div class="gallery-item bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all group" data-category="coldroom">
+<div class="relative overflow-hidden h-60">
+<img alt="ร้านดองดองดองกิ แฟชั่นไอส์แลนด์" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6CWmdNQOmjIIOOEk9gbS-GMMvXdY-qZVThFME8RiKqnbfc0iH8rSZvweO7Y36RbmSx6Lm4Cta_VIctzXvyJxCy-fQP1_SlFV6ZN2V7VOGpJHN04K3o5xfeXXAimK6uRSdLs6vgeC9f9RmL38_8KbNVNVd8bWzWll8Lsy1j58kTunwuHwYAtrog3FzxcMnzQr35MhWtll_5Ld7iAgKquDij0WF0Lm3wuWy6w-NKN4hTW1O5JUdiXAUpvZa7AjkS2oYWA"/>
+<span class="absolute top-3 left-3 bg-primary/80 backdrop-blur-sm text-white px-2.5 py-1 rounded text-xs font-label-eyebrow">
+              DONKI FASHION ISLAND
+            </span>
+<span class="absolute top-3 right-3 bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded text-xs font-label-eyebrow font-bold">
+              ส่งมอบ 100%
+            </span>
+</div>
+<div class="p-5 space-y-2">
+<div class="font-label-eyebrow text-xs text-secondary font-bold">LOCATION: แฟชั่นไอส์แลนด์, รามอินทรา</div>
+<h3 class="font-title-md text-base text-primary font-bold">ดองดองดองกิ - งานติดตั้งระบบห้องเย็น Condensing Unit</h3>
+<p class="font-body-sm text-on-surface-variant text-xs">
+              งานติดตั้งตู้แช่พร้อมชุดคอมเพรสเซอร์ Condensing Unit ภายนอกอาคารและวางระบบท่อส่งสารทำความเย็น
+            </p>
+</div>
+</div>
+<!-- Item 6: KCE Ductwork -->
+<div class="gallery-item bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all group" data-category="duct">
+<div class="relative overflow-hidden h-60">
+<img alt="KCE ลาดกระบัง งานติดตั้งท่อลมห้องสายผลิต" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2cTSieS8Tp5w1Z1VXU4OeUpDJ6Vhxks4L0lVPJ84qQJmAq5h7-WA8rjK0iyqFWIcPfuClyajofKJSaNQbglMDX7XEbd82QjgbOGLnrScsavxCS9jz4G8GYNMSocSB01q-cxotlskKBJBkyHKtrskqJdPaDaLpA_d5RMQlytog1EkVpcgPs7Wl0CfAA0zOTLA_oztomaA3nuLbv5_Gt0EAC5Db1srHlEk8e7g9dfT_J9NL1RTrwZk3-I5pI0loDFgukA"/>
+<span class="absolute top-3 left-3 bg-primary/80 backdrop-blur-sm text-white px-2.5 py-1 rounded text-xs font-label-eyebrow">
+              KCE ELECTRONICS
+            </span>
+<span class="absolute top-3 right-3 bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded text-xs font-label-eyebrow font-bold">
+              ส่งมอบ 100%
+            </span>
+</div>
+<div class="p-5 space-y-2">
+<div class="font-label-eyebrow text-xs text-secondary font-bold">LOCATION: นิคมอุตสาหกรรมลาดกระบัง</div>
+<h3 class="font-title-md text-base text-primary font-bold">KCE ลาดกระบัง - งานติดตั้งท่อลมและระบบแอร์ด้ก</h3>
+<p class="font-body-sm text-on-surface-variant text-xs">
+              ติดตั้งท่อส่งลม Air Ductwork และระบบระบายอากาศสำหรับห้องไลน์สายผลิตแผงวงจรอิเล็กทรอนิกส์ที่มีความละเอียดสูง
+            </p>
+</div>
+</div>
+<!-- Item 7: Jacket Aluminum Fashion Island -->
+<div class="gallery-item bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all group" data-category="jacket">
+<div class="relative overflow-hidden h-60">
+<img alt="ห้างแฟชั่นไอส์แลนด์ งานหุ้มฉนวนและ Jacket Aluminum" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCARzaafYLKhQNbSKIWYtVMySw5eTW9u0Vub7o03LxHs1he-Y086te6M45mL1upLnTEXXm3iPybsx8fsw0bf29l_Y6MM39afSzbyKWGBgFeMfcAxXCD3LOaER1oVH9-jFi1SaMijzkuHDdLZgNr5ERtfx6CiyrQ2U_mmxFVxC82GEZDMU2IKvfU6HH7oBD8cl0H98KyGk5XVblH8aHUCC2O7oD8dLm2iiZHsoEJC6hForWZ46qST0QomCTraEAJw3xnqg"/>
+<span class="absolute top-3 left-3 bg-primary/80 backdrop-blur-sm text-white px-2.5 py-1 rounded text-xs font-label-eyebrow">
+              FASHION ISLAND
+            </span>
+<span class="absolute top-3 right-3 bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded text-xs font-label-eyebrow font-bold">
+              ส่งมอบ 100%
+            </span>
+</div>
+<div class="p-5 space-y-2">
+<div class="font-label-eyebrow text-xs text-secondary font-bold">LOCATION: ห้างแฟชั่นไอส์แลนด์</div>
+<h3 class="font-title-md text-base text-primary font-bold">งานหุ้มฉนวนและ Jacket Aluminum ท่อส่งความเย็น</h3>
+<p class="font-body-sm text-on-surface-variant text-xs">
+              งานหุ้มฉนวนกันความร้อน-ความเย็น พร้อมแผ่นอลูมิเนียมแจ็คเก็ต (Aluminum Jacket) ป้องกันการสูญเสียพลังงานและไอควบแน่น
+            </p>
+</div>
+</div>
+<!-- Item 8: Sanden Jacket Stainless -->
+<div class="gallery-item bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all group" data-category="jacket">
+<div class="relative overflow-hidden h-60">
+<img alt="บริษัท ซันเด้น งานหุ้มฉนวนและ Jacket Stainless" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3XxHwTw2oUnkr6sLXbQvvOMBKYS7iatBgrNt3pUtoa9jxjd2jIg9rIsa3KT-o2WwQxCKVV4RcK4GhotytlmarzjTrIojVjQkD3vWIYctfRolyrPKYLb5Y9clyECFdqQIl7kSNqkaUj0cIkoLgh5YLY4r97Ritq_SlgHQa9l8Z4NfEFrNTgLEo43xb4LUA-kae0ynAWd6nYSnAs3-LNZ2Mw_iqUgD3pJ5Uk9GQDnCkRmOy9IQrZ_lqL8aA_puwKzHqZw"/>
+<span class="absolute top-3 left-3 bg-primary/80 backdrop-blur-sm text-white px-2.5 py-1 rounded text-xs font-label-eyebrow">
+              SANDEN INTERCOOL
+            </span>
+<span class="absolute top-3 right-3 bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded text-xs font-label-eyebrow font-bold">
+              ส่งมอบ 100%
+            </span>
+</div>
+<div class="p-5 space-y-2">
+<div class="font-label-eyebrow text-xs text-secondary font-bold">LOCATION: โรงงานซันเด้น อินเตอร์คูล</div>
+<h3 class="font-title-md text-base text-primary font-bold">บริษัท ซันเด้น - งานหุ้มฉนวนและ Jacket Stainless</h3>
+<p class="font-body-sm text-on-surface-variant text-xs">
+              งานหุ้มแจ็คเก็ตสแตนเลส (Stainless Steel Jacket) สำหรับท่อระบบทำความเย็นในสภาพแวดล้อมที่ต้องการความทนทานต่อสารเคมี
+            </p>
+</div>
+</div>
+<!-- Item 9: ISUZU AHU Drain Pan -->
+<div class="gallery-item bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all group" data-category="duct">
+<div class="relative overflow-hidden h-60">
+<img alt="ISUZU ลาดกระบัง งานติดตั้งถาดเดรน AHU" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-qGUSm7ZEeBXF26YBXUY6jp0MMLjQUgNDA6se1bgmLLVVQBd_n4eqklj5zAoJuP6NYfKf0dFWR4K3QmBoCUp0e0GCEApUnBYBMhNLwFvWOQFudxJYW4zRRXBB03VqFyBRutE_FP5pMIBTpfWumP7TIXor4uxZERCcnXwfvxptB5qfKWn0oB3Xv_jalWtmzhDAY_V-S262YXZAr-Fn8_5-9xOaDCjMOhvnJ0wqz1oZvNahdrB7Wjuw4kgUD_0LCnkXpQ"/>
+<span class="absolute top-3 left-3 bg-primary/80 backdrop-blur-sm text-white px-2.5 py-1 rounded text-xs font-label-eyebrow">
+              ISUZU MOTORS
+            </span>
+<span class="absolute top-3 right-3 bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded text-xs font-label-eyebrow font-bold">
+              ส่งมอบ 100%
+            </span>
+</div>
+<div class="p-5 space-y-2">
+<div class="font-label-eyebrow text-xs text-secondary font-bold">LOCATION: โรงงานอีซูซุ ลาดกระบัง</div>
+<h3 class="font-title-md text-base text-primary font-bold">ISUZU ลาดกระบัง - งานติดตั้งถาดเดรนน้ำทิ้ง AHU</h3>
+<p class="font-body-sm text-on-surface-variant text-xs">
+              งานประกอบและติดตั้งถาดรองน้ำทิ้งสแตนเลสสำหรับชุด AHU โรงงานประกอบรถยนต์ ป้องกันปัญหาน้ำรั่วซึมกระทบสายการผลิต
+            </p>
+</div>
+</div>
+<!-- Item 10: ISUZU AHU Insulation -->
+<div class="gallery-item bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all group" data-category="duct">
+<div class="relative overflow-hidden h-60">
+<img alt="ISUZU ลาดกระบัง เปลี่ยนฉนวนใยแก้ว AHU" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDL-Jb355pSg-k7cROZ-MC6GypLc3riF3EBUFwukxiI_mu1JPt_H4baQ4oa4jTvk8M-XvYAVN7A2Ky9Wr12mcFZVtVCpxglpGsy8VT3VD8nW28qZ_zzkRFAZnX6jXX2B8n2DIjwpnuc_h7wg77ki6SUq3FQ_EyOyGXzaADuFXvPCFVFenH50WWiPq_5BNQ3hfMOb9WSjbPQAL8ifooqHddpjSl2j62N6ntYTlb-j9rS8qYIsH9H9g93720v-HZ2N9Emxg"/>
+<span class="absolute top-3 left-3 bg-primary/80 backdrop-blur-sm text-white px-2.5 py-1 rounded text-xs font-label-eyebrow">
+              ISUZU MOTORS
+            </span>
+<span class="absolute top-3 right-3 bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded text-xs font-label-eyebrow font-bold">
+              ส่งมอบ 100%
+            </span>
+</div>
+<div class="p-5 space-y-2">
+<div class="font-label-eyebrow text-xs text-secondary font-bold">LOCATION: โรงงานอีซูซุ ลาดกระบัง</div>
+<h3 class="font-title-md text-base text-primary font-bold">ISUZU ลาดกระบัง - งานเปลี่ยนฉนวนใยแก้วชุด AHU</h3>
+<p class="font-body-sm text-on-surface-variant text-xs">
+              เปลี่ยนฉนวนใยแก้วและเคลือบสารป้องกันความชื้นภายในเครื่องส่งลมเย็น AHU เพิ่มประสิทธิภาพการทำความเย็นและประหยัดไฟ
+            </p>
+</div>
+</div>
+<!-- Item 11: Toshiba Carrier Bangkadi -->
+<div class="gallery-item bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all group" data-category="duct">
+<div class="relative overflow-hidden h-60">
+<img alt="Toshiba Carrier บางกะดี งานย้ายหัวลมจ่าย" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgJQDcQT9AZceJvmmdQbdvrTgyr3t98TDR_DHbOiu1WcV3DzVaSfkWYf0p2i2dcavU9XKy5fX5rxRdOwo7BH3a0WnCqq0FIqbyoEqr1dSrWRnviNfTRQEUotXvkYHhiGGgD_AN0kehMH7e6getPMySXrI6VjdYZXpzf60V4r7Zc7LPBi_ZcndXfQVZ8t0BuooyoqGUjsFSaQKD_4rDA88p20w0TN01V2zBnVWFBRoTUjlxiewwgoQCkuzJotrlPA-Z1Q"/>
+<span class="absolute top-3 left-3 bg-primary/80 backdrop-blur-sm text-white px-2.5 py-1 rounded text-xs font-label-eyebrow">
+              TOSHIBA CARRIER
+            </span>
+<span class="absolute top-3 right-3 bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded text-xs font-label-eyebrow font-bold">
+              ส่งมอบ 100%
+            </span>
+</div>
+<div class="p-5 space-y-2">
+<div class="font-label-eyebrow text-xs text-secondary font-bold">LOCATION: นิคมฯ บางกะดี, ปทุมธานี</div>
+<h3 class="font-title-md text-base text-primary font-bold">Toshiba Carrier บางกะดี - ภาพงานย้ายหัวลมจ่าย Air Diffuser</h3>
+<p class="font-body-sm text-on-surface-variant text-xs">
+              ปรับปรุงแนวท่อลม ปรับตำแหน่งหัวจ่ายลมเย็นตามการปรับผังเครื่องจักรไลน์ผลิตใหม่ ให้การไหลเวียนอากาศถูกต้องตามหลักพลศาสตร์
+            </p>
+</div>
+</div>
+<!-- Item 12: Cooking Storage Evap Coil -->
+<div class="gallery-item bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all group" data-category="chiller">
+<div class="relative overflow-hidden h-60">
+<img alt="งานเปลี่ยนคอยล์ร้อนและคอยล์เย็นห้องเก็บวัตถุดิบปรุงอาหาร" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrNHuUIvL4xGzLOIHomuCP30x_qTRAoDF74tS_PtLW8Cucdkk7IVm14N2uWfjGyn2kTfPYuopDDxJ6xlQV5uVM1GVlWw29FwxJR-9cgLAP0Ncnm6kCvYfNVAXNTqRs4yFomRIUKIs3ZBI43_Gbz4LouoqqsUpHH6iOFUBiSyGCHchHwqytSFHk8shyjJQfwYt2uvRByPZS35k1v_kouQDRMydCBqVHtDRm1GmrveNmdQDtX_USK_QEt3Mgmnx7S_4L8Q"/>
+<span class="absolute top-3 left-3 bg-primary/80 backdrop-blur-sm text-white px-2.5 py-1 rounded text-xs font-label-eyebrow">
+              FOOD FACTORY
+            </span>
+<span class="absolute top-3 right-3 bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded text-xs font-label-eyebrow font-bold">
+              ส่งมอบ 100%
+            </span>
+</div>
+<div class="p-5 space-y-2">
+<div class="font-label-eyebrow text-xs text-secondary font-bold">LOCATION: โรงงานแปรรูปอาหาร, กทม.</div>
+<h3 class="font-title-md text-base text-primary font-bold">งานเปลี่ยนคอยล์ร้อน &amp; คอยล์เย็น ห้องเก็บวัตถุดิบ</h3>
+<p class="font-body-sm text-on-surface-variant text-xs">
+              ปรับปรุงระบบคอยล์เย็นสแตนเลสกันสนิมและ Condenser Unit สำหรับห้องควบคุมอุณหภูมิวัตถุดิบเพื่อรักษาความสดและยืดอายุสินค้า
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Engineering Standards & Quality Protocols -->
+<section class="w-full py-20 bg-primary text-on-primary relative overflow-hidden scroll-mt-20" id="standards">
+<div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin relative z-10">
+<div class="flex flex-col items-center text-center mb-16">
+<div class="inline-flex items-center gap-2">
+<div class="w-1.5 h-5 bg-on-tertiary-container rounded-sm"></div>
+<span class="font-label-eyebrow text-secondary-fixed uppercase tracking-widest text-xs font-bold">QUALITY ASSURANCE</span>
+</div>
+<h2 class="font-headline-lg text-2xl lg:text-3xl font-bold mt-2 text-white">
+          มาตรฐานความปลอดภัยและงานวิศวกรรม 100%
+        </h2>
+<p class="font-body-lg text-surface-container-high max-w-2xl mt-2">
+          เรายึดมั่นในข้อกำหนดของโรงงานอุตสาหกรรมขนาดใหญ่และมาตรฐานสากลทุกขั้นตอน
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="bg-surface/10 backdrop-blur-sm p-6 rounded-xl border-l-4 border-secondary-container space-y-3">
+<div class="w-10 h-10 rounded bg-secondary-container/20 text-secondary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined">health_and_safety</span>
+</div>
+<h3 class="font-title-md text-white font-bold text-base">Safety First Protocol</h3>
+<p class="font-body-sm text-surface-container-high text-xs leading-relaxed">
+            ช่างทุกคนมีใบรับรองความปลอดภัย สวมใส่อุปกรณ์ PPE ครบชุด พร้อมระบบตรวจสอบ Hot Work Permit ก่อนปฏิบัติงานเชื่อมทุกครั้ง
+          </p>
+</div>
+<div class="bg-surface/10 backdrop-blur-sm p-6 rounded-xl border-l-4 border-on-tertiary-container space-y-3">
+<div class="w-10 h-10 rounded bg-on-tertiary-container/20 text-on-tertiary-container flex items-center justify-center">
+<span class="material-symbols-outlined">workspace_premium</span>
+</div>
+<h3 class="font-title-md text-white font-bold text-base">SUS 304 &amp; PIR Grade B1</h3>
+<p class="font-body-sm text-surface-container-high text-xs leading-relaxed">
+            เลือกใช้วัสดุสแตนเลส SUS 304 และแผ่นฉนวน PIR ปลอดภัย ไม่ลามไฟ Food-grade ป้องกันแบคทีเรียตามมาตรฐาน GMP/HACCP
+          </p>
+</div>
+<div class="bg-surface/10 backdrop-blur-sm p-6 rounded-xl border-l-4 border-secondary-container space-y-3">
+<div class="w-10 h-10 rounded bg-secondary-container/20 text-secondary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined">speed</span>
+</div>
+<h3 class="font-title-md text-white font-bold text-base">Pressure &amp; Vacuum Testing</h3>
+<p class="font-body-sm text-surface-container-high text-xs leading-relaxed">
+            ทดสอบแรงดันระบบท่อน้ำยาด้วยก๊าซไนโตรเจนและดึงสุญญากาศ (Deep Vacuum Test) ก่อนจ่ายสารทำความเย็นเข้าระบบทุกไซต์งาน
+          </p>
+</div>
+<div class="bg-surface/10 backdrop-blur-sm p-6 rounded-xl border-l-4 border-on-tertiary-container space-y-3">
+<div class="w-10 h-10 rounded bg-on-tertiary-container/20 text-on-tertiary-container flex items-center justify-center">
+<span class="material-symbols-outlined">event_repeat</span>
+</div>
+<h3 class="font-title-md text-white font-bold text-base">Annual PM Maintenance</h3>
+<p class="font-body-sm text-surface-container-high text-xs leading-relaxed">
+            สัญญาบริการบำรุงรักษาเชิงป้องกัน ตรวจเช็คกระแสไฟ ล้างระบบ เปลี่ยนถ่ายน้ำมันคอมเพรสเซอร์ และออกใบรับรองระบบประจำปี
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact & Quotation Request Section -->
+<section class="w-full py-20 bg-surface-container-low scroll-mt-20" id="contact">
+<div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg lg:gap-space-xl">
+<!-- Left: Contact Details & Direct Hotline -->
+<div class="lg:col-span-5 space-y-6">
+<div class="flex items-center gap-2">
+<div class="w-1.5 h-5 bg-on-tertiary-container rounded-sm"></div>
+<span class="font-label-eyebrow text-secondary uppercase tracking-widest text-xs font-bold">CONTACT &amp; CONSULTATION</span>
+</div>
+<h2 class="font-headline-lg text-2xl lg:text-3xl text-primary font-bold">
+            ปรึกษาผู้เชี่ยวชาญ<br class="hidden sm:inline"/>หรือนัดสำรวจหน้างานฟรี
+          </h2>
+<p class="font-body-md text-on-surface-variant leading-relaxed">
+            ทีมวิศวกร บริษัท 3ต อินเตอร์คูล แอนด์ เซอร์วิส จำกัด พร้อมเข้าสำรวจ ประเมินราคา และให้คำปรึกษาทางเทคนิคสำหรับโรงงาน คลังสินค้า และโครงการค้าปลีก
+          </p>
+<!-- Contact Cards -->
+<div class="space-y-4 pt-2">
+<!-- Hotline Card -->
+<a class="flex items-center gap-4 p-4 rounded-xl bg-surface hover:bg-surface-container transition-all shadow-sm group" href="tel:0815163898">
+<div class="w-12 h-12 rounded-lg bg-on-tertiary-container text-white flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-2xl">call</span>
+</div>
+<div>
+<div class="font-label-eyebrow text-xs text-on-surface-variant uppercase tracking-wider">HOTLINE สายด่วน 24 ชม.</div>
+<div class="font-headline-md text-lg font-bold text-primary">081-5163898</div>
+<div class="font-body-sm text-xs text-secondary font-medium">โทรด่วน ติดต่อคุณธวัชชัยโดยตรง</div>
+</div>
+</a>
+<!-- LINE Official -->
+<div class="flex items-center gap-4 p-4 rounded-xl bg-surface shadow-sm">
+<div class="w-12 h-12 rounded-lg bg-secondary/10 text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-2xl">chat</span>
+</div>
+<div>
+<div class="font-label-eyebrow text-xs text-on-surface-variant uppercase tracking-wider">LINE OFFICIAL</div>
+<div class="font-headline-md text-base font-bold text-primary">Line ID: chelsea898</div>
+<div class="font-body-sm text-xs text-on-surface-variant">ส่งรูปหน้างานหรือแบบแปลนมาประเมินได้ทันที</div>
+</div>
+</div>
+<!-- Email -->
+<div class="flex items-center gap-4 p-4 rounded-xl bg-surface shadow-sm">
+<div class="w-12 h-12 rounded-lg bg-secondary/10 text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-2xl">mail</span>
+</div>
+<div>
+<div class="font-label-eyebrow text-xs text-on-surface-variant uppercase tracking-wider">EMAIL QUOTATION</div>
+<a class="font-headline-md text-base font-bold text-primary hover:text-secondary hover:underline" href="mailto:3t.intercool@gmail.com">
+                  3t.intercool@gmail.com
+                </a>
+<div class="font-body-sm text-xs text-on-surface-variant">ส่งเอกสาร TOR / BOQ เพื่อขอใบเสนอราคา</div>
+</div>
+</div>
+<!-- Location -->
+<div class="flex items-start gap-4 p-4 rounded-xl bg-surface shadow-sm">
+<div class="w-12 h-12 rounded-lg bg-secondary/10 text-secondary flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-2xl">pin_drop</span>
+</div>
+<div class="space-y-1">
+<div class="font-label-eyebrow text-xs text-on-surface-variant uppercase tracking-wider">HEADQUARTERS LOCATION</div>
+<div class="font-body-sm text-on-surface leading-relaxed text-xs">
+                  เลขที่ 109/94 หมู่บ้านพฤกษา51 ซอย ฉลองกรุง53 แขวงลำปลาทิว เขตลาดกระบัง จังหวัดกรุงเทพมหานคร 10520
+                </div>
+<div class="font-label-technical text-xs text-secondary font-bold">ใกล้เขตลาดกระบัง • สุวรรณภูมิ • นิคมฯ ชลบุรี-ระยอง</div>
+</div>
+</div>
+</div>
+<!-- Quick Map Preview with data-location -->
+<div class="w-full h-44 bg-surface-container rounded-xl overflow-hidden shadow-inner flex items-center justify-center text-on-surface-variant relative" data-location="Chalong Krung 53, Lam Pla Thio, Lat Krabang, Bangkok" style="">
+<div class="text-center p-4">
+<span class="material-symbols-outlined text-3xl text-secondary mb-1">map</span>
+<p class="font-label-technical text-xs font-semibold">ลาดกระบัง กรุงเทพมหานคร (พิกัดศูนย์บริการ)</p>
+<p class="font-body-sm text-[11px] text-on-surface-variant">ให้บริการทั่วเขตกรุงเทพฯ ปริมณฑล และ EEC</p>
+</div>
+</div>
+</div>
+<!-- Right: Interactive Consultation & RFQ Form -->
+<div class="lg:col-span-7">
+<div class="bg-surface rounded-2xl p-6 sm:p-8 lg:p-10 shadow-md">
+<div class="mb-6 space-y-1">
+<h3 class="font-headline-md text-xl sm:text-2xl font-bold text-primary">
+                แบบฟอร์มขอใบเสนอราคา / นัดสำรวจหน้างานฟรี
+              </h3>
+<p class="font-body-sm text-on-surface-variant">
+                กรอกรายละเอียดเบื้องต้น เจ้าหน้าที่ฝ่ายวิศวกรรมจะติดต่อกลับภายใน 24 ชม.
+              </p>
+</div>
+<form class="space-y-4" id="rfq-form" onsubmit="event.preventDefault(); showSubmitConfirmation();">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="space-y-1.5">
+<label class="font-label-technical text-xs font-semibold text-on-surface" for="company-name">ชื่อบริษัท / หน่วยงาน</label>
+<input class="w-full px-4 py-2.5 rounded bg-surface-container-low text-on-surface font-body-sm focus:outline-none focus:bg-surface focus:shadow-sm" id="company-name" placeholder="เช่น บริษัท เอบีซี อินดัสทรี จำกัด" required="" type="text"/>
+</div>
+<div class="space-y-1.5">
+<label class="font-label-technical text-xs font-semibold text-on-surface" for="contact-name">ชื่อผู้ติดต่อ</label>
+<input class="w-full px-4 py-2.5 rounded bg-surface-container-low text-on-surface font-body-sm focus:outline-none focus:bg-surface focus:shadow-sm" id="contact-name" placeholder="ชื่อ-นามสกุล / ตำแหน่ง" required="" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="space-y-1.5">
+<label class="font-label-technical text-xs font-semibold text-on-surface" for="contact-phone">เบอร์โทรศัพท์ติดต่อกลับ</label>
+<input class="w-full px-4 py-2.5 rounded bg-surface-container-low text-on-surface font-body-sm focus:outline-none focus:bg-surface focus:shadow-sm" id="contact-phone" placeholder="08X-XXX-XXXX" required="" type="tel"/>
+</div>
+<div class="space-y-1.5">
+<label class="font-label-technical text-xs font-semibold text-on-surface" for="contact-email">อีเมล</label>
+<input class="w-full px-4 py-2.5 rounded bg-surface-container-low text-on-surface font-body-sm focus:outline-none focus:bg-surface focus:shadow-sm" id="contact-email" placeholder="example@company.com" required="" type="email"/>
+</div>
+</div>
+<div class="space-y-1.5">
+<label class="font-label-technical text-xs font-semibold text-on-surface" for="service-type">ประเภทงานที่สนใจ</label>
+<select class="w-full px-4 py-2.5 rounded bg-surface-container-low text-on-surface font-body-sm focus:outline-none focus:bg-surface focus:shadow-sm" id="service-type">
+<option value="coldroom">งานสร้าง/ปรับปรุงระบบห้องเย็น (Cold Storage / Freezer Room)</option>
+<option value="hvac">งานระบบปรับอากาศโรงงานและอาคารพาณิชย์ (VRF / Chiller)</option>
+<option value="duct">งานระบบท่อลมระบายอากาศ &amp; งานหุ้มฉนวน Jacket</option>
+<option value="chiller">งานเปลี่ยนวาล์ว ท่อน้ำเย็น และ Cooling Tower</option>
+<option value="commercial-fridge">งานติดตั้ง/ซ่อมตู้แช่ห้างสรรพสินค้า</option>
+<option value="maintenance">สัญญาบริการบำรุงรักษาเชิงป้องกันประจำปี (PM Contract)</option>
+<option value="emergency">แจ้งซ่อมฉุกเฉินด่วน 24 ชั่วโมง</option>
+</select>
+</div>
+<div class="space-y-1.5">
+<label class="font-label-technical text-xs font-semibold text-on-surface" for="project-details">รายละเอียดโครงการ / ข้อมูลหน้างาน</label>
+<textarea class="w-full px-4 py-2.5 rounded bg-surface-container-low text-on-surface font-body-sm focus:outline-none focus:bg-surface focus:shadow-sm" id="project-details" placeholder="ระบุขนาดพื้นที่, อุณหภูมิที่ต้องการ, ขนาดห้องเย็น, หรืออาการผิดปกติของเครื่องจักรที่ต้องการให้เข้าตรวจสอบ..." rows="4"></textarea>
+</div>
+<div class="pt-2">
+<button class="w-full bg-primary hover:bg-primary-container text-white font-title-md py-3.5 px-6 rounded shadow-md transition-all flex items-center justify-center gap-2 group" type="submit">
+<span class="material-symbols-outlined text-on-tertiary-container group-hover:rotate-12 transition-transform">send</span>
+<span>ส่งข้อมูลขอนัดสำรวจหน้างาน / ประเมินราคาฟรี</span>
+</button>
+</div>
+<p class="font-body-sm text-[11px] text-on-surface-variant text-center pt-1">
+                * ข้อมูลของท่านจะถูกเก็บเป็นความลับเพื่อใช้สำหรับการติดต่อเรื่องใบเสนอราคาของ 3T Intercool &amp; Service เท่านั้น
+              </p>
+</form>
+<!-- Success Notice Modal / Banner (Hidden initially) -->
+<div class="hidden mt-4 p-4 rounded bg-surface-container text-primary space-y-2" id="rfq-success">
+<div class="flex items-center gap-2 font-title-md text-sm font-bold text-secondary">
+<span class="material-symbols-outlined">check_circle</span>
+<span>ได้รับข้อมูลเรียบร้อยแล้ว</span>
+</div>
+<p class="font-body-sm text-xs text-on-surface-variant">
+                ทีมวิศวกร บริษัท 3ต อินเตอร์คูล แอนด์ เซอร์วิส จำกัด จะติดต่อกลับตามเบอร์โทรศัพท์ที่ท่านระบุไว้เพื่อยืนยันนัดหมายสำรวจหน้างานต่อไป ขอบคุณครับ
+              </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive JavaScript logic for gallery filtering and quotation feedback -->
+<script>
+    (function() {
+      // Gallery Filter logic
+      const filterButtons = document.querySelectorAll('#gallery-filter-buttons button');
+      const galleryItems = document.querySelectorAll('#project-gallery .gallery-item');
+
+      filterButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          // Update active styles
+          filterButtons.forEach(b => {
+            b.classList.remove('bg-primary', 'text-white');
+            b.classList.add('bg-surface-container', 'text-on-surface');
+          });
+          btn.classList.remove('bg-surface-container', 'text-on-surface');
+          btn.classList.add('bg-primary', 'text-white');
+
+          const filter = btn.getAttribute('data-filter');
+
+          galleryItems.forEach(item => {
+            if (filter === 'all' || item.getAttribute('data-category') === filter) {
+              item.style.display = 'block';
+            } else {
+              item.style.display = 'none';
+            }
+          });
+        });
+      });
+
+      // Quick smooth scrolling enhancer for all anchor jumps
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          const targetId = this.getAttribute('href');
+          if (targetId && targetId !== '#') {
+            const targetEl = document.querySelector(targetId);
+            if (targetEl) {
+              e.preventDefault();
+              targetEl.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+              });
+            }
+          }
+        });
+      });
+    })();
+
+    function showSubmitConfirmation() {
+      const successBox = document.getElementById('rfq-success');
+      const form = document.getElementById('rfq-form');
+      if (successBox) {
+        successBox.classList.remove('hidden');
+        if (form) {
+          form.reset();
+        }
+      }
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-low mt-space-xl border-t border-outline-variant/30"><div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin py-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg mb-space-xl"><div class="space-y-space-sm"><div class="flex items-center gap-space-sm mb-2"><img alt="3T Intercool &amp; Service" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRy1OzkIMpI71VvSLTpewUWpU4v0vX8iI7Op8o6m4iTV6pcbsO_oa9gcsOgU8hJ_WIxWFb7gXmC_ki_xqwn6AgGK7vx3jxtAX9JSD5T_AYaGa_wFCtjJvaXDApwqQJQk_IHcfCw95VhqRlpMnvelQU5r9eZQgg5jJdtGEl9XM5pHIFH_zZCgmmFR8GTc1M0VJ4ZKgvKBum0yaGNW0XMhFgy5wZ6K_Sro1dOBrRzZgWG7bgSAiVJXwaHo_bOl5uoqGUIQ"/><span class="font-headline-md text-sm font-bold tracking-tight text-primary uppercase">3T INTERCOOL &amp; SERVICE</span></div><p class="font-body-sm text-on-surface-variant leading-relaxed">บริษัท 3ต อินเตอร์คูล แอนด์ เซอร์วิส จำกัด ผู้เชี่ยวชาญด้านงานออกแบบ ติดตั้ง และซ่อมบำรุงระบบปรับอากาศและระบบทำความเย็นอุตสาหกรรมครบวงจร (HVAC &amp; Cold Chain Solutions)</p><div class="pt-2 border-t border-outline-variant/30 space-y-1"><p class="font-label-eyebrow text-[11px] text-secondary font-bold uppercase tracking-wide">นาย ธวัชชัย บาระพรม</p><p class="font-label-technical text-xs text-on-surface-variant">MR. TAWATCHAI BARAPHOM</p><p class="font-label-eyebrow text-[10px] text-secondary font-semibold uppercase tracking-wider">MANAGING DIRECTOR</p></div></div><div class="space-y-space-sm"><h3 class="font-title-md text-sm uppercase tracking-wider text-primary border-l-2 border-secondary pl-2">การบริการหลัก</h3><ul class="space-y-2 font-body-sm text-on-surface-variant"><li class=""><a class="hover:text-secondary transition-colors" data-path="services" href="#">ระบบปรับอากาศโรงงาน (VRF / Chiller)</a></li><li class=""><a class="hover:text-secondary transition-colors" data-path="services" href="#">คลังสินค้าห้องเย็น (Cold Storage)</a></li><li class=""><a class="hover:text-secondary transition-colors" data-path="services" href="#">ระบบท่อส่งลมและระบายอากาศ (Ductwork)</a></li><li class=""><a class="hover:text-secondary transition-colors" data-path="services" href="#">สัญญาบริการซ่อมบำรุงรายปี (Preventive Maintenance)</a></li><li class=""><a class="hover:text-secondary transition-colors" data-path="services" href="#">บริการตรวจเช็กและแก้ไขฉุกเฉิน 24 ชั่วโมง</a></li></ul></div><div class="space-y-space-sm"><h3 class="font-title-md text-sm uppercase tracking-wider text-primary border-l-2 border-secondary pl-2">เมนูลัด</h3><ul class="space-y-2 font-body-sm text-on-surface-variant"><li class=""><a class="hover:text-secondary transition-colors" data-path="about-us" href="#">เกี่ยวกับบริษัท &amp; มาตรฐานวิศวกรรม</a></li><li class=""><a class="hover:text-secondary transition-colors" data-path="track-record" href="#">ประวัติโครงการและลูกค้าอ้างอิง</a></li><li class=""><a class="hover:text-secondary transition-colors" data-path="why-choose-us" href="#">ทำไมต้องเลือก 3T Intercool</a></li><li class=""><a class="hover:text-secondary transition-colors" data-path="contact" href="#">ขอใบเสนอราคา / นัดสำรวจหน้างาน</a></li></ul></div><div class="space-y-space-sm"><h3 class="font-title-md text-sm uppercase tracking-wider text-primary border-l-2 border-secondary pl-2">ติดต่อเรา</h3><div class="space-y-2 font-body-sm text-on-surface-variant"><p class="flex items-start gap-2"><span class="material-symbols-outlined text-sm mt-0.5 text-secondary shrink-0">location_on</span><span class="">เลขที่ 109/94 หมู่บ้านพฤกษา51 ซอย ฉลองกรุง53 แขวงลำปลาทิว เขตลาดกระบัง จังหวัดกรุงเทพมหานคร 10520</span></p><p class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-secondary">call</span><a class="hover:text-secondary transition-colors" href="tel:0815163898">081-5163898</a></p><p class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-secondary">chat</span><span class="">Line ID: chelsea898</span></p><p class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-secondary">mail</span><a class="hover:text-secondary transition-colors" href="mailto:3t.intercool@gmail.com">3t.intercool@gmail.com</a></p><p class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-secondary">schedule</span><span class="">จันทร์ - เสาร์: 08:30 - 17:30 น. (บริการฉุกเฉิน 24 ชม.)</span></p></div></div></div><div class="pt-space-md border-t border-outline-variant/40 flex flex-col sm:flex-row items-center justify-between gap-4 font-body-sm text-on-surface-variant text-xs"><div class="">© 2024 บริษัท 3ต อินเตอร์คูล แอนด์ เซอร์วิส จำกัด (3T INTERCOOL &amp; SERVICE CO., LTD.) สงวนลิขสิทธิ์ทั้งหมด</div><div class="flex items-center gap-space-md"><span class="font-label-technical text-secondary">ISO 9001:2015 CERTIFIED</span><span class="font-label-technical text-on-surface-variant">ENGINEERING EXCELLENCE</span></div></div></div></footer>
+</body></html>
